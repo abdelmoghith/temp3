@@ -1,0 +1,105 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+.container{
+    background-color: white;
+    width: 450px;
+    height: 340px;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0.5px 5px black;
+    display: grid;
+    grid-template-columns:repeat( 2 , 1fr);
+    overflow: hidden;
+}
+.image{
+    background-image: url(image-product-desktop.jpg);
+    background-size: cover;
+}
+.discription {
+    width: 170px ;
+   padding: 10px;
+   font-size: 10px;
+   margin: 0 auto;
+   position: relative;
+}
+.discription h6 {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgba(0, 0, 0, 0.4);
+    
+}
+.discription h2 {
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-top: -10px;
+    font-family: 'Fraunces', serif;
+}
+.pricing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -20px;
+    
+}
+.pricing .zbel{
+   font-size: 25px;
+   color:hsl(158, 36%, 37%);
+   font-family: 'Fraunces', serif;
+}
+.cart {
+    position: absolute;
+    bottom: 15px;
+    background-color: hsl(158, 36%, 37%);
+    width: 170px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-transform: capitalize;
+    Font-size: 12px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.cart i {
+    margin: 0 4px;
+}
+.cart:hover {
+    background-color: hsl(159, 35%, 15%) ;
+}
+@media (max-width:768px) {
+    
+    .container{
+        grid-template-columns:repeat( 1, 1fr);
+        grid-template-rows: repeat(2,1fr);
+        width: auto;
+        height: 1000px;
+        margin: 0 auto;
+        padding: 0px;
+    }
+    .cart {
+       
+        width: 238px;
+        height: 74px;
+        margin: 0px auto;
+        margin-top: 40px;
+        Font-size: 20px;
+        margin-left: 22px
+    
+    }
+    .discription {
+        width: auto ;
+       padding: 0px;
+       font-size: 18px;
+       margin: 0 auto;
+       position: relative;
+    }
+    .discription h2 {
+     
+       font-size: 40px;
+    
+    }
+}
